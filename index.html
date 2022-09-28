@@ -14,7 +14,7 @@
 
     <!--Se referenció a la carpeta de imágenes para tener un icono en la página-->
     <link rel="icon" type="image/x-icon" href="./assets/img/agregar.png">
-    
+
     <!-- link para los signos en los botones-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css
     ">
@@ -22,51 +22,58 @@
 
 <body>
     <div id="bordecito" alt="borde de la calculadora">
-        <section class="container"> <h1 class=" row my-1 justify-content-md-center" alt="Título: Mi calculadora">🎀Mi Calculadora🎀</h1></section>
-    <!--Aquí inicia el código para los input-->
-    <div class="container-sm">
-        <div class="row my-4 justify-content-md-center">
-            <div class="col"> <input type="number" placeholder="Ingresa un número" id="nmbr1" alt="Casilla para ingresar un número.">
+        <section class="container">
+            <h1 class=" row my-1 justify-content-md-center" alt="Título: Mi calculadora">🎀Mi Calculadora🎀</h1>
+        </section>
+        <!--Aquí inicia el código para los input-->
+        <div class="container-sm">
+            <div class="row my-4 justify-content-md-center">
+                <div class="col"> <input type="number" placeholder="Ingresa un número" id="nmbr1"
+                        alt="Casilla para ingresar un número.">
+                </div>
+                <div class="col row my-5">
+                    <div>
+                        <input type=number placeholder="Resultado" id="result" alt="Casilla donde sale el resultado.">
+                    </div>
+                </div>
+                <div class="col"> <input type="number" placeholder="Ingresa otro número" id="nmbr2"
+                        alt="Segunda casilla para ingresar un número.">
+                </div>
             </div>
-            <div class="col"> <input type="number" placeholder="Ingresa otro número" id="nmbr2" alt="Segunda casilla para ingresar un número.">
-            </div>
-            <div class="col"> <input type= number placeholder="Resultado" id="result" alt="Casilla donde sale el resultado.">
-            </div>
-        </div>
-        <!--Línea divisoria sólo como adorno-->
-        <hr>
-        <!--Aquí inicia el código para los botones, el código se sacó de bootstrap-->
-        <section>
-            <div class="container">
-                <div class="row my-4 justify-content-md-center">
-                    <div class="col">
-                       
-                            <button class="botones" onclick="suma()" type="button" class="btn btn-outline-dark" alt="botón suma"><i
-                                    class="fa-solid fa-plus"></i></button>
+            <!--Línea divisoria sólo como adorno-->
+            <hr>
+            <!--Aquí inicia el código para los botones, el código se sacó de bootstrap-->
+            <section>
+                <div class="container">
+                    <div class="row my-4 justify-content-md-center">
+                        <div class="col">
+
+                            <button class="botones" onclick="suma()" type="button" class="btn btn-outline-dark"
+                                alt="botón suma"><i class="fa-solid fa-plus"></i></button>
 
 
-                            <button class="botones" onclick="resta()" type="button" class="btn btn-outline-dark" alt="botón resta"><i
-                                    class="fa-solid fa-minus"></i></button>
+                            <button class="botones" onclick="resta()" type="button" class="btn btn-outline-dark"
+                                alt="botón resta"><i class="fa-solid fa-minus"></i></button>
 
 
                             <button class="botones" onclick="multiplica()" type="button" class="btn btn-outline-dark"
                                 alt="botón multiplicación"><i class="fa-solid fa-xmark"></i></button>
 
 
-                            <button class="botones" onclick="divide()" type="button" class="btn btn-outline-dark" alt="botón división"><i
-                                    class="fa-solid fa-slash"></i></button>
-                       
+                            <button class="botones" onclick="divide()" type="button" class="btn btn-outline-dark"
+                                alt="botón división"><i class="fa-solid fa-slash"></i></button>
+
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
 
-        <!--javascript bootstrap-->
-        <script src="./js/bootstrap.bundle.min.js"></script>
-        <!--hoja de javascript independiente del bootstrap-->
-        <script src="./document.js"></script>
-</div>
+            <!--javascript bootstrap-->
+            <script src="./js/bootstrap.bundle.min.js"></script>
+            <!--hoja de javascript independiente del bootstrap-->
+            <script src="./document.js"></script>
+        </div>
 </body>
 
 </html>
